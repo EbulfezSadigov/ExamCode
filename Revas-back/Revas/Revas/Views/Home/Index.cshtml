@@ -1,0 +1,161 @@
+﻿@model HomeViewModel
+
+
+    <section id="banner" class="text-center">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-8">
+                    <div class="banner-item">
+                        <h1 class="text-light">READY TO LAUNCH</h1>
+                        <i class="bi bi-yin-yang"></i>
+                        <h3 class="text-light">LOREM IPSUM DOLOR SIT AMET</h3>
+                        <p class="text-light">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                            ligula eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                            consequat massa quis enim.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="portfolio" class="text-center">
+        <div class="container">
+            <h2 class="mb-5">OUR PORTFOLIO</h2>
+            <div class="row g-5">
+                @foreach (Portfolio item in Model.portfolios)
+                {
+                <div class="col-md-4 col-sm-6 rounded">
+                    <img src="~/img/@item.Image" alt="" class="img-fluid rounded">
+                </div>
+                }
+            </div>
+        </div>
+    </section>
+
+
+    <section id="company" class="text-center text-light">
+        <div class="container">
+            <h2 class="mb-5">ABOUT COMPANY</h2>
+            <div class="row justify-content-between">
+                <div class="col-md-3 col-12 mb-md-0 mb-5">
+                    <div class="img-wrapper mb-3 rounded">
+                        <img src="~/img/team1.png" alt="" class="img-fluid rounded">
+                    </div>
+                    <div class="about">
+                        <h3 class="fw-bold">Jhon Deo Alex</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                        </p>
+                    </div>
+                    <div class="icons">
+                        <div class="item">
+                            <i class="bi bi-facebook"></i>
+                        </div>
+
+                        <div class="item">
+                            <i class="bi bi-linkedin"></i>
+                        </div>
+
+                        <div class="item">
+                            <i class="bi bi-google"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 mb-md-0 mb-5">
+                    <div class="img-wrapper mb-3 rounded">
+                        <img src="~/img/team2.jpg" alt="" class="img-fluid rounded">
+                    </div>
+                    <div class="about">
+                        <h3 class="fw-bold">Linda Sew Lie</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                        </p>
+                    </div>
+                    <div class="icons">
+                        <div class="item">
+                            <i class="bi bi-facebook"></i>
+                        </div>
+
+                        <div class="item">
+                            <i class="bi bi-linkedin"></i>
+                        </div>
+
+                        <div class="item">
+                            <i class="bi bi-google"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 mb-md-0 mb-5">
+                    <button class="accordion">Vivamus sagittis egestas mauris </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis egestas mauris ut vehicula. Cras viverra ac orci ac aliquam. Nulla eget condimentum mauris, eget tincidunt est.</p>
+                    </div>
+
+                    <button class="accordion">Cras viverra ac orci ac</button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis egestas mauris ut vehicula. Cras viverra ac orci ac aliquam. Nulla eget condimentum mauris, eget tincidunt est.</p>
+                    </div>
+
+                    <button class="accordion">Sed Diam Nonummy Euismod</button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis egestas mauris ut vehicula. Cras viverra ac orci ac aliquam. Nulla eget condimentum mauris, eget tincidunt est.</p>
+                    </div>
+                    <button class="accordion">Vivamus sagittis egestas mauris</button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis egestas mauris ut vehicula. Cras viverra ac orci ac aliquam. Nulla eget condimentum mauris, eget tincidunt est.</p>
+                    </div>
+                    <button class="accordion">Cras viverra ac orci ac</button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis egestas mauris ut vehicula. Cras viverra ac orci ac aliquam. Nulla eget condimentum mauris, eget tincidunt est.</p>
+                    </div>
+                    <button class="accordion">Sed Diam Nonummy Euismod</button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis egestas mauris ut vehicula. Cras viverra ac orci ac aliquam. Nulla eget condimentum mauris, eget tincidunt est.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="contact" class="text-center">
+        <div class="container">
+            <h2 class="mb-5">CONTACT HERE</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Name"
+                                   style="padding-block: 20px;">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"
+                                   style="padding-block: 20px;">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Notes"
+                                   style="padding-block: 20px;">
+                        </div>
+                        <button type="submit" class="btn btn-primary"
+                                style="background-color: #2c92b4; padding:15px;">
+                            SUBMIT REQUEST
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
